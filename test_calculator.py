@@ -15,5 +15,9 @@ def test_subtract(a, b, expected):
     assert subtract(a,b) == expected
 
 
+def test_subtract_invalid_input():
+    with pytest.raises(ValueError):
+        subtract("a", 2)
+
 if __name__ == '__main__':
     pass
